@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roll the dice</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/dice.js"
+
 </head>
 <body class=" bg-cyan-700">
-    
+    <div>
+        <h1 class=" text-5xl">select the number of dice's face</h1>
+
+        <div>
+        <!-- selection du dé -->
+            <input type="radio" value="3" name="dices">
+            <input type="radio" value="5" name="dices">
+            <input type="radio" value="19" name="dices">
+        </div>
+
+        <button type="submit"> roll the dice </button> 
+        <!-- lance le fichier js -->
+        <div id="dicesResult">
+            <!-- resultat du lancer -->
+        </div>
+    </div>
 </body>
 </html>
