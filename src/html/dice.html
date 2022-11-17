@@ -5,22 +5,71 @@
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roll the dice</title>
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet"/>
+    <!-- <link href="/src/css/input.css" rel="stylesheet"/> -->
     <script type="text/javascript" src="../js/dice.js" defer></script>
 
 </head>
 <body class=" bg-cyan-700">
-    <div>
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <h1 class=" text-5xl">select the number of dice's face</h1>
 
-        <div>
+        <div class="grid gap-2 lg:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-20">
         <!-- selection du dé -->
-            <input type="radio" value="3" name="dices">
-            <input type="radio" value="5" name="dices">
-            <input type="radio" value="19" name="dices">
+            <label  >
+                <input
+                    type="radio" 
+                    value="3" 
+                    name="dices" 
+                    id="dice4"
+                    class=" hidden peer"
+                 />
+                 <div 
+                    class=" w-32 h-40 max-w-32 max-h-40 ml-20
+                    mt-4
+                    bg-[url('/src/img/dice4.svg')]
+                    peer-checked:bg-[url('/src/img/dice4checked.svg')]
+                    hover:bg-[url('/src/img/dice4checked.svg')]  
+                    bg-contain bg-no-repeat ">
+                </div>
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    value="5"
+                    name="dices"
+                    class="hidden peer" 
+                />
+                <div
+                    class=" w-32 h-40 max-w-32 max-h-40 ml-20
+                    mt-4
+                    bg-[url('/src/img/dice6.svg')]
+                    peer-checked:bg-[url('/src/img/dice6checked.svg')]
+                    hover:bg-[url('/src/img/dice6checked.svg')]  
+                    bg-contain bg-no-repeat ">
+                </div>
+            </label>
+
+            <label>
+                <input 
+                    type="radio" 
+                    value="19" 
+                    name="dices" 
+                    class="hidden peer" 
+                />
+                <div
+                    class=" w-32 h-40 max-w-32 max-h-40 ml-20
+                    mt-4
+                    bg-[url('/src/img/dice20.svg')]
+                    peer-checked:bg-[url('/src/img/dice20checked.svg')]
+                    hover:bg-[url('/src/img/dice20checked.svg')]  
+                    bg-contain bg-no-repeat ">
+            </div>
+            </label>
         </div>
 
-        <button type="submit" id="roll"> roll the dice </button> 
+        <button type="submit" id="roll" class=" mt-7 text-2xl rounded-full p-3"> roll the dice </button> 
         <!-- lance le fichier js -->
         <div id="dicesResult">
             <!-- resultat du lancer -->
