@@ -513,25 +513,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mt-20 {
-  margin-top: 5rem;
+.mr-\[20\%\] {
+  margin-right: 20%;
 }
 
 .ml-20 {
   margin-left: 5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
 }
 
 .grid {
@@ -540,6 +527,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .h-40 {
@@ -554,29 +545,43 @@ video {
   width: 8rem;
 }
 
-.max-w-screen-xl {
-  max-width: 1280px;
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.justify-items-center {
-  justify-items: center;
+.place-items-center {
+  place-items: center;
 }
 
 .gap-2 {
   gap: 0.5rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.border-none {
+  border-style: none;
 }
 
 .bg-cyan-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(14 116 144 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#415A77\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(65 90 119 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1b263b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 38 59 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/src\/img\/dice4\.svg\'\)\] {
@@ -599,10 +604,6 @@ video {
   background-repeat: no-repeat;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -613,9 +614,16 @@ video {
   padding-right: 1rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl {
@@ -623,8 +631,60 @@ video {
   line-height: 2rem;
 }
 
-.checked\:bg-\[url\(\'\/src\/img\/dice4checked\.svg\'\)\]:checked {
-  background-image: url('/src/img/dice4checked.svg');
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-\[\#0e1e2f\] {
+  --tw-text-opacity: 1;
+  color: rgb(14 30 47 / var(--tw-text-opacity));
+}
+
+.text-\[\#E0E1DD\] {
+  --tw-text-opacity: 1;
+  color: rgb(224 225 221 / var(--tw-text-opacity));
+}
+
+.text-\[\#1B263B\] {
+  --tw-text-opacity: 1;
+  color: rgb(27 38 59 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-\[\#0E1E2F\] {
+  text-decoration-color: #0E1E2F;
+}
+
+.shadow-\[0_9px_\#0e1e2f\] {
+  --tw-shadow: 0 9px #0e1e2f;
+  --tw-shadow-colored: 0 9px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+#dicesResult {
+  -webkit-box-reflect: below 10px 
+    -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
+}
+
+.hover\:translate-y-\[1px\]:hover {
+  --tw-translate-y: 1px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-\[url\(\'\/src\/img\/dice4checked\.svg\'\)\]:hover {
@@ -639,8 +699,21 @@ video {
   background-image: url('/src/img/dice20checked.svg');
 }
 
-.hover\:checked\:bg-\[url\(\'\/src\/img\/dice4checked\.svg\'\)\]:checked:hover {
-  background-image: url('/src/img/dice4checked.svg');
+.hover\:shadow-\[0_8px_\#0e1e2f\]:hover {
+  --tw-shadow: 0 8px #0e1e2f;
+  --tw-shadow-colored: 0 8px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:translate-y-\[7px\]:active {
+  --tw-translate-y: 7px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.active\:shadow-\[0_2px_\#0e1e2f\]:active {
+  --tw-shadow: 0 2px #0e1e2f;
+  --tw-shadow-colored: 0 2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .peer:checked ~ .peer-checked\:bg-\[url\(\'\/src\/img\/dice4checked\.svg\'\)\] {
@@ -655,17 +728,22 @@ video {
   background-image: url('/src/img/dice20checked.svg');
 }
 
-.peer:hover ~ .peer-hover\:checked\:bg-\[url\(\'\/src\/img\/dice4checked\.svg\'\)\]:checked {
-  background-image: url('/src/img/dice4checked.svg');
-}
+@media (min-width: 450px) {
+  .sm\:mr-\[13\%\] {
+    margin-right: 13%;
+  }
 
-@media (min-width: 768px) {
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 700px) {
+  .lg\:mr-\[4\%\] {
+    margin-right: 4%;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -674,14 +752,9 @@ video {
     gap: 1.5rem;
   }
 
-  .lg\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .lg\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
